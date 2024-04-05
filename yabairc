@@ -1,0 +1,35 @@
+# Set window animation easing to easeOutCirc
+yabai -m config window_animation_easing ease_out_circ
+
+# Set split ratio to 50% for old and new windows
+yabai -m config split_ratio 0.5
+
+# Set split type to automatic based on window dimensions
+yabai -m config split_type auto
+
+# Set the mouse modifier key to alt (option)
+yabai -m config mouse_modifier alt
+
+# Define mouse action 1 as resize
+yabai -m config mouse_action1 resize
+
+# Define mouse action 2 as move
+yabai -m config mouse_action2 move
+
+# Set the action when a window is dropped on another to stack
+yabai -m config mouse_drop_action stack
+
+# Set the layout of spaces to Binary Space Partitioning (bsp)
+yabai -m config layout bsp
+
+# Set all padding to 0 to have windows span the full space
+yabai -m config top_padding 0
+yabai -m config bottom_padding 0
+yabai -m config left_padding 0
+yabai -m config right_padding 0
+
+# Set the window gap to 0 for a seamless window layout
+yabai -m config window_gap 1
+
+# Prevent yabai from managing System Preferences
+yabai -m rule --add app="System Preferences" manage=off
