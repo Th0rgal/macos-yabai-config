@@ -1,3 +1,6 @@
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
 # Set window animation easing to easeOutCirc
 yabai -m config window_animation_easing ease_out_circ
 
