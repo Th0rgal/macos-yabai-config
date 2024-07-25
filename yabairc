@@ -33,3 +33,6 @@ yabai -m config window_gap 1
 
 # Prevent yabai from managing System Preferences
 yabai -m rule --add app="System Settings" manage=off
+
+# Prevent yabai from managing IntelliJ dialog windows
+yabai -m rule --add app="^IntelliJ IDEA$" role="^AXWindow$" subrole="^AXDialog$" manage=off
