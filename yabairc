@@ -39,3 +39,6 @@ yabai -m rule --add app="System Settings" manage=off
 
 # Prevent yabai from managing IntelliJ dialog windows
 yabai -m rule --add app="^IntelliJ IDEA$" role="^AXWindow$" subrole="^AXDialog$" manage=off
+
+# Prevent yabai from managing Bitwarden login window
+yabai -m rule --add app="Brave Browser" title="Bitwarden" manage=off
